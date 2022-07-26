@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/takunagai/typescript-for-javascript-developers/issues"
   },
-  "homepage": "https://github.com/takunagai/typescript-for-javascript-developers#readme"
+  "homepage": "https://github.com/takunagai/typescript-for-javascript-developers#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
