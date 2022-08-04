@@ -21,14 +21,13 @@ console.log('\n');
 /**
  * 2. オプショナルの有無で分岐
  */
-let bmi2: (
-    height: number, weight: number, printable?: boolean) => number = (
+let bmi2: (height: number, weight: number, printable?: boolean) => number = (
     height: number,
     weight: number,
     printable?: boolean
 ): number => {
     if (printable) {
-        console.log('bmi2');
+        console.log('bmi2'); // printable を受け取った場合のみ表示
     }
     return weight / (height * height);
 }
@@ -41,8 +40,7 @@ console.log('\n');
 /**
  * 2 をリファクタリング、if 文中でも計算結果を使う
  */
-let bmi3: (
-    height: number, weight: number, printable?: boolean) => number = (
+let bmi3: (height: number, weight: number, printable?: boolean) => number = (
     height: number,
     weight: number,
     printable?: boolean
