@@ -14,7 +14,7 @@ let numberUnknown: unknown = kansu(); // unknown 型
 
 console.log(typeof numberUnknown); // → number。typeof で、型を判別できる
 
-// number 型であることが保証されているこのコードなら、エラーが出ない！(narrowing)
+// number 型であることが保証されているこのコードなら、エラーが出ない！(narrowing, タイプガード)
 if (typeof numberUnknown === 'number') {
     let sumUnknown = numberUnknown + 10;
 }
