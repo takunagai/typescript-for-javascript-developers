@@ -18,7 +18,10 @@ class Lion extends Animal {
     }
 
     run(): string {
-        return 'I can run 80km';
+        // return 'I can run 80km';
+        const parentMessage = super.run(); // super.run() で、親クラスのメソッドを継承(TypeScript 独自)
+        console.log({ parentMessage });
+        return `${super.run()} ${this.speed}km/h`; //?
     }
 }
 
